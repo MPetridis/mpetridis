@@ -10,5 +10,10 @@ app.use(ejsLayouts);
 app.get("/", (req, res) => {
   res.render("hello");
 });
+app.get("/biography", (req, res) => {
+  res.render("biography", {
+    menu: '<a href="#">bio</a>',
+  });
+});
 
 app.listen(3000);
