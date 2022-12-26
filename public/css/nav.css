@@ -23,13 +23,34 @@
 nav {
   overflow: hidden;
 
- 
   position: sticky;
   position: -webkit-sticky;
   left: 0;
   top: 0;
   width: 100%;
 }
+.main{
+  position: fixed;
+  float: left;
+  margin-left: 25%;
+  padding: auto;
+  height: 100%;
+
+}
+.aside{
+  float: left;
+  position: fixed;
+  height: 100%;
+  width: 15%;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  text-align: center;
+  background-color:antiquewhite ;
+  color: black;
+}
+
 .copy {
   margin: auto;
   position: top;
@@ -38,5 +59,12 @@ nav {
   top: 0;
   
   text-align: center;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
 }
 
