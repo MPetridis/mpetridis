@@ -28,12 +28,21 @@
     </main>
 
     <aside>
-      <div class="side-bar"><%- menu %></div>
+      <div class="side-bar">
+        <ul>
+          <%- menu %>
+        </ul>
+      </div>
     </aside>
 
     <footer>
       <div class="copy">
-        <h4>Copyright &#169;</h4>
+        <h4>
+          Copyright &#169;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </h4>
       </div>
     </footer>
   </body>

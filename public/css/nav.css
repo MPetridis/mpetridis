@@ -47,8 +47,9 @@ main{
   background-color: rgb(68, 0, 255);
 
 }
-.side-bar{
-  margin: 20px;
+.side-bar li{
+  list-style: none;
+  margin: px;
 }
 aside{
   

@@ -12,7 +12,9 @@ app.get("/", (req, res) => {
 });
 app.get("/biography", (req, res) => {
   res.render("biography", {
-    menu: '<a href="#">bio</a>',
+    menu: [
+      '<li><a href="#">Παιδικά Χρόνια</a></li> <li><a href="#">bio</a></li> <li><a href="#">bio</a></li>',
+    ],
   });
 });
 
