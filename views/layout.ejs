@@ -12,9 +12,9 @@
       <nav>
         <div class="nav-bar">
           <a href="/biography">Βιογραφία</a>
-          <a href="#">Φωτογραφίες</a>
-          <a href="#">Έργα</a>
-          <a href="#">Σύνδεσμοι</a>
+          <a href="/photos">Φωτογραφίες</a>
+          <a href="/work">Έργα</a>
+          <a href="/links">Σύνδεσμοι</a>
           <a href="#">Διαχείριση</a>
         </div>
         <div class="user">
@@ -27,10 +27,16 @@
       <div class="main"><%- body %></div>
     </main>
 
+    
+
     <aside>
       <div class="side-bar">
         <ul>
-          <%- menu %>
+          <% menu.forEach(function(mascot) { %>
+            <li>
+              <a href=""><%= mascot.title %></a> 
+            </li>
+          <% }); %>
         </ul>
       </div>
     </aside>
