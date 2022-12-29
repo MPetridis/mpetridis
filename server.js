@@ -1,4 +1,5 @@
 const express = require("express");
+const { body, validationResult } = require("express-validator");
 
 
 var ejsLayouts = require("express-ejs-layouts");
@@ -74,31 +75,69 @@ app.get('/publishes', (req, res) => {
 })
 
 
+app.get('/image', (req, res) => {
+  res.render("image",{
+    
+      menu:[{
+        title:'book'
+      },
+      {
+        title:'image'
+      }
+    ]
+  })
+  
+})
+
+app.get('/book', (req, res) => {
+  res.render("book",{
+    
+      menu:[{
+        title:'book'
+      },
+      {
+        title:'image'
+      }
+    ]
+  })
+  
+})
 
 
 
 app.get("/images", (req, res) => {
-  res.render("layout", {
-      page:'',
-      menu:biography,
-      body:''
+  res.render("hello", {
+      
+      menu:[{
+        title:'book'
+      },
+      {
+        title:'image'
+      }
+    ]
   });
 });
 app.get("/work", (req, res) => {
-  res.render("layout", {
-  body:"",
+  res.render("work", {
+  
       
       page:'',
-      menu:biography
+      menu:[]
   });
 });
 app.get("/links", (req, res) => {
   res.render("layout", {
     
-      
-      page:'',
-      menu:biography
+    page:'',
+    menu:[]  
+     
   });
 });
 
+app.get("/admin",(req,res)=>{
+  res.render("admin",{
+    page:'',
+    menu:[]
+  })
+})
 app.listen(3000);

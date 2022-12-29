@@ -54,9 +54,15 @@ main {
 
 }
 
+.image img {
+  display: flexbox;
+  padding: 18px;
+  float: left;
+}
+
 .side-bar li {
   list-style: none;
-  margin: px;
+
 }
 
 aside {
