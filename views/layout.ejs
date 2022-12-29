@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -24,7 +24,7 @@
       </nav>
     </header>
     <main>
-      <div class="main"><%- body %></div>
+      <div class="main"><%= body %></div>
     </main>
 
     
@@ -34,7 +34,7 @@
         <ul>
           <% menu.forEach(function(mascot) { %>
             <li>
-              <a href=""><%= mascot.title %></a> 
+              <a href="/<%= mascot.title %>"><%= mascot.title %></a> 
             </li>
           <% }); %>
         </ul>

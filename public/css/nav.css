@@ -7,6 +7,7 @@
   text-decoration: none;
   font-size: 17px;
 }
+
 .user a {
   float: left;
   text-align: center;
@@ -16,15 +17,19 @@
   text-decoration: none;
   font-size: 17px;
 }
+
 .nav-bar a:hover {
   background-color: rgb(83, 81, 233);
 }
-.user{
+
+.user {
   float: right;
 }
+
 .nav-bar a.active {
   background-color: rgb(24, 27, 216);
 }
+
 nav {
   overflow: hidden;
 
@@ -34,25 +39,28 @@ nav {
   top: 0;
   width: 100%;
 }
-.main{
+
+.main {
   padding: 14px;
 }
-main{
-  position:fixed;
-  float: left;
+
+main {
+  width: 75%;
+  position: fixed;
   margin-left: 25%;
   padding: auto;
   height: 100%;
-  width: 100%;
   background-color: rgb(68, 0, 255);
 
 }
-.side-bar li{
+
+.side-bar li {
   list-style: none;
   margin: px;
 }
-aside{
-  
+
+aside {
+
   position: fixed;
   height: 100%;
   width: 25%;
@@ -68,12 +76,13 @@ aside{
   padding: 0px;
   overflow: hidden;
   top: 0;
-  
+
   text-align: center;
 }
+
 footer {
   text-align: center;
-  background-color:rgb(163, 124, 74) ;
+  background-color: rgb(163, 124, 74);
   color: black;
   position: fixed;
   left: 0;
@@ -81,4 +90,3 @@ footer {
   width: 100%;
 
 }
-
