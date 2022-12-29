@@ -77,25 +77,26 @@ app.get('/publishes', (req, res) => {
 
 
 
-app.get("/photos", (req, res) => {
-  res.render("photos", {
-      page:'biography',
+app.get("/images", (req, res) => {
+  res.render("layout", {
+      page:'',
       menu:biography,
+      body:''
   });
 });
 app.get("/work", (req, res) => {
-  res.render("work", {
+  res.render("layout", {
   body:"",
       
-      page:'biography',
+      page:'',
       menu:biography
   });
 });
 app.get("/links", (req, res) => {
-  res.render("links", {
+  res.render("layout", {
     
       
-      page:'biography',
+      page:'',
       menu:biography
   });
 });
